@@ -1,0 +1,17 @@
+cmake -DwxWidgets_ROOT_DIR:PATH=C:/wxWidgets/3.1.5/ -DwxWidgets_USE_STATIC ../src
+
+or you may set environment variable
+
+set wxWidgets_ROOT_DIR=D:\path\to\wxWidgets\ ...
+
+
+msbuild SlnFolders.sln -target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder:Clean
+MSBuild.exe wxapp.sln
+MSBuild.exe wxapp.sln /property:Configuration=Release
+
+
+cmake -DwxWidgets_ROOT_DIR:PATH=C:/wxWidgets/3.1.5/ ../src
+
+
+
+wxWidgets_USE_STATIC 
